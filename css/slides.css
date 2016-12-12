@@ -25,7 +25,15 @@
     font-size: 78px;
 }
 
+#successadroll img {
+	height: 65px;
+}
+
 #successwhatsapp img {
+	height: 65px;
+}
+
+#successbet365 img {
 	height: 65px;
 }
 
@@ -34,6 +42,9 @@
 	line-height: 35px;
 }
 
+#successswitching img {
+	height: 65px;
+}
 
 #tempting p {
 	position: absolute;
@@ -48,3 +59,15 @@
 	vertical-align: middle;
 }
 */
+
+#actor .actor-crop {
+
+}
+
+#actor-hier img {
+	
+	width: 650px;
+}
+
+
+

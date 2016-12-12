@@ -13,9 +13,9 @@ data-rotate-y="45"
  -->
 <div id="impress">
 <div id="title" class="step slide box" data-x="0" data-y="0"> 
-<h1>Introduction to:</h1>
+<h1>Introduction to</h1>
 <img class="center" src="images/erlang-logo.png" />
-<p>Paul Vincent</p>
+<p>by Paul Vincent</p>
 </div>
 
 <div id="whatif" class="step slide box" data-x="2000" data-y="0"> 
@@ -25,18 +25,19 @@ data-rotate-y="45"
 
 <div id="whatif2" class="step slide box" data-x="2000" data-y="1000"> 
 <h2>What if...?</h2></br>
-<p>loosely coupled services</p>
-<p>service registry</p>
-<p>hot code reload</p>
-<p>simple scalability and native distibution</p>
-<p>message passing concurrency</p>
+<p>loosely coupled services</p></br>
+<p>service registry</p></br>
+<p>simple packaging model</p></br>
+<p>simple scalability and native distibution</p></br>
+<p>processes were cheap and isolated</p>
 </div>
 
 <div id="whatif3" class="step slide box" data-x="2000" data-y="2000"> 
 <h2>What if...</h2></br>
-<p>native fault tolorence</p>
-<p>processes were cheap and isolated</p>
-<p>immutability</p>
+<p>concurrency</p></br>
+<p>immutability</p></br>
+<p>native fault tolorence</p></br>
+<p>hot code reload</p></br>
 <p>a schema less, distributed database</p>
 </div>
 
@@ -62,42 +63,72 @@ data-rotate-y="45"
 <div id="successwhatsapp" class="step slide box success" data-x="4000" data-y="1500" data-z="500" data-rotate="0" data-scale="1"> 
 <h2><img src="images/WhatsApp_Logo.png" /></h2>
 
-<p>Targetted scaling to 1 million concurrent connections per host server.</p>
+<p>Targetted scaling to 1 million concurrent connections per host.  
 <p>2 million achieved in 2012.</p>
+</br>
+<p>Brought by Facebook for <b>$19 billion</b> in 2014, they had 50 employees servicing 450 million users.</p>
+</br>
+<p>10 billion messages handled every day, their messaging system is written in Erlang</p>
 <p class="reference"><a href="http://www.erlang-factory.com/upload/presentations/558/efsf2012-whatsapp-scaling.pdf">Reference</a></p>
-<p></p></br>
-<p>WhatsApp sold to Facebook for <b>$19 billion</b> in 2014, they had 50 employees servicing 450 million users.</p>
-<p>10 billion messages handled every day, they're messaging system is written in Erlang</p>
 </div>
 
-<div id="success.addroll" class="step slide box success" data-x="4000" data-y="2000" data-z="1000" data-rotate="0" data-scale="1"> 
-<h2>AdRoll</h2>
-<p>A real-time bidding advertising platform supporting 60 billion requests per day within a 100 milliseconds timeout. (in 2015)</p>
+<div id="successadroll" class="step slide box success" data-x="4000" data-y="2000" data-z="1000" data-rotate="0" data-scale="1"> 
+<h2><img src="images/AdRoll.png" /></h2>
+<p>A real-time bidding advertisment platform supporting 60 billion requests per day (in 2015).</p>
+</br>
+<p>Requests processed within a 100 milliseconds timeout </p>
+</br>
 <p>Fully hosted on AWS</p>
 <p class="reference"><a href=">https://www.youtube.com/watch?v=EPE7HRDPzKM">Reference</a></p>
 </div>
 
-<div id="success.bet365" class="step slide box success" data-x="4000" data-y="2500" data-z="1500" data-rotate="0" data-scale="1"> 
-<h2>Bet365</h2>
+<div id="successbet365" class="step slide box success" data-x="4000" data-y="2500" data-z="1500" data-rotate="0" data-scale="1"> 
+<h2><img src="images/Bet365.png" /></h2>
+<p>"Our first big success with Erlang was on our system that pushes data to customers using our In-Play product.</p>
+</br>
+<p>We are making 100,000 changes to the system every second, whilst serving over 2.5 million concurrent connections."</p>
+
+<p class="reference"><a href="http://www.information-age.com/why-bet365-swapped-java-erlang-123459196/">Reference</a></p>
 </div>
 
 <div id="successswitching" class="step slide box success" data-x="4000" data-y="3000" data-z="2000" data-rotate="0" data-scale="1"> 
-<h2>Ericsson MME</h2>
-<p><b><a href="https://www.ericsson.com/ourportfolio/products/sgsn-mme">MME</a> is a thing in the backbone of mobile telephony network, it makes all mobile data work.</b>
+<h2><img src="images/Ericsson_logo.png">MME</h2>
+<p><b><a href="https://www.ericsson.com/ourportfolio/products/sgsn-mme">"MME</a> is a thing in the backbone of mobile telephony network, it makes all mobile data work.</b>
 <b>And it’s written in Erlang</b>.</p>
 <p>Smartphones wouldn’t be able to connect to the network at all without MME. </p>
 <p>Now, Ericsson’s got the biggest market share in the world for mobile base stations, for we do 40% of the total world market of 3G and CDMA and 60% of the world market for LTE and 4G. 
 This gives us about 50% of the world market. </p>
-<p><b>That means, Erlang’s controlling 50% of all smartphones world wide</b>.</p>
+<p><b>That means, Erlang’s controlling 50% of all smartphones world wide"</b>.</p>
 <p class="reference"><a href="https://mostlyerlang.com/2015/05/21/interview-with-joe-armstrong/">Reference</a></p>
 <p class="reference"><a href="http://blog.ndpar.com/2013/05/21/joe-armstrong-mostlyerlang/">Transcript reference</a></p>
 </div>
 
 
-<div id="actor" class="step slide box" data-x="6000" data-y="0" data-z="0" data-rotate="0" data-scale="2"> 
+<div id="actor" class="step slide box" data-x="6000" data-y="0" data-z="0" data-rotate="0" data-scale="1"> 
 <h1>What's an actor?</h1>
+<div class="actor-crop">
+<img src="images/Slide2.PNG" />
+</div>
 </div>
 
+<div id="actor2" class="step slide box" data-x="6000" data-y="500" data-z="500" data-rotate="0" data-scale="1"> 
+<h1>What's an actor?</h1>
+<div class="actor-crop">
+<img src="images/Slide3.PNG" />
+</div>
+</div>
+
+<div id="actor3" class="step slide box" data-x="6000" data-y="1000" data-z="1000" data-rotate="0" data-scale="1"> 
+<h1>What's an actor?</h1>
+<div class="actor-crop">
+<img src="images/Slide4.PNG" />
+</div>
+</div>
+
+<div id="actor-hier" class="step slide box" data-x="6000" data-y="1500" data-z="1500" data-rotate="0" data-scale="1"> 
+<h1>What's an actor?</h1>
+<img src="images/Slide5.PNG" />
+</div>
 
 <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10" style="pointer-events: none;">
     </div>
