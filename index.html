@@ -1,71 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<style>
-body{
-    background-color: #dfdfdf;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-.box{
-    display:block;
-    width: 800px;
-    height:600px;
-    padding: 30px 50px;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,.1);
-    border: 1px solid rgba(0,0,0,.3);
-    border-radius: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    color: rgb(102,102,102);
-}
-.box.present .animation-rotate-right {
-    display: inline-block;
-    transform: rotate(5deg);
-    color: rgb(10,10,10);
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-.box.present .animation-rotate-left {
-    display: inline-block;
-    transform: rotate(-5deg);
-    color: rgb(10,10,10);
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-
-.unbox{
-    display:block;
-    width: 800px;
-    height:600px;
-    padding: 30px 50px;
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    color: rgb(102,102,102);
-}
-.unbox.present .animation-rotate-right {
-    display: inline-block;
-    transform: rotate(5deg);
-    color: rgb(10,10,10);
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-
-#rather b {
-    display: inline-block;
-    color:red;
-}
-
-#success b {
-    display:block;
-    font-size:60px;
-    colour:black;
-}
-</style>
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+<link href="css/impress.css" rel="stylesheet" />
+<link href="css/slides.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -74,58 +12,95 @@ data-scale="2"
 data-rotate-y="45"
  -->
 <div id="impress">
-<div id="title" class="step box" data-x="0" data-y="0"> 
-<h1>Introduction to Erlang</h1>
+<div id="title" class="step slide box" data-x="0" data-y="0"> 
+<h1>Introduction to:</h1>
+<img class="center" src="images/erlang-logo.png" />
 <p>Paul Vincent</p>
 </div>
 
-<div id="whatif" class="step unbox" data-x="2000" data-y="0"> 
-<h2>What if...?</h2>
-<h4>I told you there was a framework that supported:</h4>
+<div id="whatif" class="step slide box" data-x="2000" data-y="0"> 
+<h2>What if...</h2></br>
+<p>...you had a wish list for modern software development?</p>
 </div>
 
-<div class="step unbox" data-x="4000" data-y="0"> 
-<ul>
-<li>microservices</li>
-<li>service registry</li>
-<li>hot code reload</li>
-<li>simple scalability and distibution</li>
-<li>message passing concurrency</li>
-<li>processes are cheap</li>
-<li>immutability</li>
-<li>oh..., and schema less database</li>
-</ul>
+<div id="whatif2" class="step slide box" data-x="2000" data-y="1000"> 
+<h2>What if...?</h2></br>
+<p>loosely coupled services</p>
+<p>service registry</p>
+<p>hot code reload</p>
+<p>simple scalability and native distibution</p>
+<p>message passing concurrency</p>
 </div>
 
-<div id="rather" class="step unbox" data-x="6000" data-y="0"> 
-<p>Rather than having <b>1 web server</b> supporting 10,000 concurrent connections...</p>
+<div id="whatif3" class="step slide box" data-x="2000" data-y="2000"> 
+<h2>What if...</h2></br>
+<p>native fault tolorence</p>
+<p>processes were cheap and isolated</p>
+<p>immutability</p>
+<p>a schema less, distributed database</p>
 </div>
 
-<div id="webservers" class="step unbox" data-x="6000" data-y="1500" data-z="0" data-rotate="180"> 
-<p>...there were 10,000 webservers <b class="animation-rotate-right">each</b> handling a <b>single consumer?</b></p>
+<div id="rather" class="step slide box" data-x="2000" data-y="3000"> 
+<h2>What if...</h2></br>
+<p>...rather than <b>1 web server</b> supporting 10,000 concurrent connections...</p>
 </div>
 
-<div id="tempting" class="step unbox" data-x="7500" data-y="1500" data-z="0" data-rotate="210"> 
+<div id="webservers" class="step slide box" data-x="2000" data-y="4000" data-z="0" data-rotate="180" data-scale="2"> 
+<h2>What if...</h2></br>
+<p>...there were <b>10,000 webservers</b>, each handling a <b>single consumer?</b></p>
+</div>
+
+<div id="tempting" class="step slide box" data-x="4000" data-y="0" data-z="0" data-rotate="0"> 
 <p>Sounding like a new cool [micro|nano] services framework?</p>
 </div>
 
-<div id="older" class="step unbox" data-x="7500" data-y="3000" data-z="0" data-rotate="240"> 
-<p>What if I told you, it was <b>older</b> than <i>some</i> members of the audience.
-<i>(not the speaker)</i></p>
+<div id="older" class="step slide box" data-x="4000" data-y="1000" data-z="0" data-rotate="0"> 
+<p>What if I told you, it was 30 years old?</p></br>
+<p>And that it was developed to solve the telecomunication challenges in the 1980's?</p>
 </div>
 
-<div id="success" class="step box" data-x="7500" data-y="7500" data-z="0" data-rotate="270" data-scale="2"> 
-<h2>Success stories</h2>
-<b>WhatsApp</b>
-<b>AdRoll</b>
-<b>RabbitMQ</b>
-<b>CouchDB</b>
+<div id="successwhatsapp" class="step slide box success" data-x="4000" data-y="1500" data-z="500" data-rotate="0" data-scale="1"> 
+<h2><img src="images/WhatsApp_Logo.png" /></h2>
 
+<p>Targetted scaling to 1 million concurrent connections per host server.</p>
+<p>2 million achieved in 2012.</p>
+<p class="reference"><a href="http://www.erlang-factory.com/upload/presentations/558/efsf2012-whatsapp-scaling.pdf">Reference</a></p>
+<p></p></br>
+<p>WhatsApp sold to Facebook for <b>$19 billion</b> in 2014, they had 50 employees servicing 450 million users.</p>
+<p>10 billion messages handled every day, they're messaging system is written in Erlang</p>
+</div>
+
+<div id="success.addroll" class="step slide box success" data-x="4000" data-y="2000" data-z="1000" data-rotate="0" data-scale="1"> 
+<h2>AdRoll</h2>
+<p>A real-time bidding advertising platform supporting 60 billion requests per day within a 100 milliseconds timeout. (in 2015)</p>
+<p>Fully hosted on AWS</p>
+<p class="reference"><a href=">https://www.youtube.com/watch?v=EPE7HRDPzKM">Reference</a></p>
+</div>
+
+<div id="success.bet365" class="step slide box success" data-x="4000" data-y="2500" data-z="1500" data-rotate="0" data-scale="1"> 
+<h2>Bet365</h2>
+</div>
+
+<div id="successswitching" class="step slide box success" data-x="4000" data-y="3000" data-z="2000" data-rotate="0" data-scale="1"> 
+<h2>Ericsson MME</h2>
+<p><b><a href="https://www.ericsson.com/ourportfolio/products/sgsn-mme">MME</a> is a thing in the backbone of mobile telephony network, it makes all mobile data work.</b>
+<b>And it’s written in Erlang</b>.</p>
+<p>Smartphones wouldn’t be able to connect to the network at all without MME. </p>
+<p>Now, Ericsson’s got the biggest market share in the world for mobile base stations, for we do 40% of the total world market of 3G and CDMA and 60% of the world market for LTE and 4G. 
+This gives us about 50% of the world market. </p>
+<p><b>That means, Erlang’s controlling 50% of all smartphones world wide</b>.</p>
+<p class="reference"><a href="https://mostlyerlang.com/2015/05/21/interview-with-joe-armstrong/">Reference</a></p>
+<p class="reference"><a href="http://blog.ndpar.com/2013/05/21/joe-armstrong-mostlyerlang/">Transcript reference</a></p>
 </div>
 
 
+<div id="actor" class="step slide box" data-x="6000" data-y="0" data-z="0" data-rotate="0" data-scale="2"> 
+<h1>What's an actor?</h1>
+</div>
 
 
+<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10" style="pointer-events: none;">
+    </div>
 </div>
 
 <script src="js/impress.js"></script>

@@ -1,0 +1,50 @@
+
+.success h2 {
+	%line-height: 50px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.success .reference {
+	font-size: 12px;
+}
+
+#rather b {
+    display: inline-block;
+    color:red;
+}
+
+#success b {
+    display:block;
+    font-size:60px;
+    colour:black;
+}
+
+#whatif2 .loosely {
+    font-size: 78px;
+}
+
+#successwhatsapp img {
+	height: 65px;
+}
+
+#successswitching p {
+	font-size: 20px;
+	line-height: 35px;
+}
+
+
+#tempting p {
+	position: absolute;
+	top: 40%;
+	vertical-align: middle;
+}
+
+/*
+#older div {
+	position: absolute;
+	top: 40%;
+	vertical-align: middle;
+}
+*/
